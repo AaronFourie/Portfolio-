@@ -168,6 +168,99 @@ p{
 }
 }
 
+@media only screen and (max-width: 600px) {
+  #head{
+    display: none;
+  }
+  #cont-v1{
+    width: 100vw;
+    padding: 0 20px;
+    float: left;
+    border-left: none;
+}
+.project-card {
+  width: 87vw;/* Set the width to 100% for each card within the column */
+  height: fit-content;
+}
+#stack{
+  width: 90vw;
+}
+h1{
+  font-size: 54px;
+  margin-top: -10px;
+}
+h2{
+  margin-top:10px;
+  padding-top: 20px;
+}
+#hero h2{
+font-size: 27px;
+}
+#about{
+  width: 87vw;
+}
+#hero {
+  height: 42vh;
+  width: 90vw;
+  display: grid;
+  justify-content: none;
+
+}
+#hero-content {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  padding-bottom: 40px;
+}
+#about1{
+  margin: 75px 0;
+  width: 87vw;
+  padding: 0;
+}
+p{
+  font-size: 16px;
+
+}
+#resume{
+  width: 87vw;
+}
+#stack{
+  padding: 0;
+  margin: 0;
+}
+#stack img{
+  width: 38px;
+  height: 38px;
+}
+#stack .label{
+  font-weight: 300;
+  font-size: 14px;
+}
+#about{
+  margin-top: -20px 0;
+  padding: 0;
+}
+#img-content{
+  margin-top: -10px; /* Add margin for spacing between text and image */
+  margin-bottom: 30px;
+}
+#img-content #profile-photo{
+  padding: 40px 30px;
+  width: 240px;
+  height: 261px;
+}
+#img-content ul{
+  display: grid;
+  margin-top: -20px;
+}
+#img-content ul li{
+  padding: 0;
+  margin-top: 10px;
+}
+p{
+  text-align: justify;
+}
+}
 
 #text-content {
     text-align: left;
