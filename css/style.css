@@ -262,11 +262,12 @@ p{
   text-align: justify;
 }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
   #hero-content {
     padding-bottom: 80px;
   }
   #about{
+    margin-top: 60px;
     transform: translateY(-30px);
   }
   #img-content{
