@@ -70,7 +70,7 @@ for (let i = 0; i < repos.length; i++) {
       card.innerHTML = `
         <h3>${repoDetails.name}</h3>
         <p>${repoDetails.description}</p>
-        <p><strong>Tags:</strong> ${repoDetails.tags.join(", ")}</p>
+        <p><strong>Languages:</strong> ${repoDetails.tags.join(", ")}</p>
         <a href="${repoDetails.html_url}" target="_blank">View on GitHub</a>
       `;
   

@@ -195,6 +195,7 @@ h2{
 }
 #hero h2{
 font-size: 27px;
+
 }
 #about{
   width: 87vw;
@@ -284,7 +285,7 @@ h2 {
     align-items: center;
 }
 #img-content li{
-  margin: 10px 0 20px 0;
+  margin: 10px 10px 20px 10px;
   padding-top: 20px;
   display: inline-block;
 }
