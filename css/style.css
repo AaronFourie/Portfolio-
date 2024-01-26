@@ -167,7 +167,23 @@ p{
   text-align: justify;
 }
 }
-
+@media only screen and (max-width: 600px) {
+  #hero-content {
+    padding-bottom: 80px;
+  }
+  #about{
+    margin-top:0;
+  }
+  #img-content{
+    margin-top: -10px; /* Add margin for spacing between text and image */
+    margin-bottom: 60px;
+  }
+  #img-content #profile-photo{
+    padding: 40px 30px;
+    width: 220px;
+    height: 241px;
+  }
+}
 @media only screen and (max-width: 600px) {
   #head{
     display: none;
