@@ -262,12 +262,12 @@ p{
   text-align: justify;
 }
 }
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 375px) {
   #hero-content {
     padding-bottom: 80px;
   }
   #about{
-    transform: translateY(30px);
+    transform: translateY(-30px);
   }
   #img-content{
     margin-top: -10px; /* Add margin for spacing between text and image */
