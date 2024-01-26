@@ -172,7 +172,7 @@ p{
     padding-bottom: 80px;
   }
   #about{
-    padding-top:50px;
+    transform: translateY(30px);
   }
   #img-content{
     margin-top: -10px; /* Add margin for spacing between text and image */
