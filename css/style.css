@@ -167,7 +167,7 @@ p{
   text-align: justify;
 }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   #hero-content {
     padding-bottom: 80px;
   }
