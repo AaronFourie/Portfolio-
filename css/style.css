@@ -167,12 +167,12 @@ p{
   text-align: justify;
 }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 380px) {
   #hero-content {
     padding-bottom: 80px;
   }
   #about{
-    margin-top:50px;
+    padding-top:50px;
   }
   #img-content{
     margin-top: -10px; /* Add margin for spacing between text and image */
