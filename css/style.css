@@ -4,12 +4,13 @@ html{
     padding: 0;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Inconsolata', monospace;
-    background: #000000;
-    
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../images/bg1.jpg');
+  background-size: contain;
+  background-blend-mode: overlay;
 }
 h1{
     color: white;
@@ -23,7 +24,7 @@ h2{
 }
 h3{
     color: rgb(190, 190, 190);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 26px
 
 }
@@ -36,60 +37,137 @@ p{
     color: rgb(224, 224, 224);
     font-weight: 400;
     font-size: 19px;
-    line-height: 34px;
+    line-height: 36px;
+    text-align: left;
 }
-#head{
+#head {
   position: fixed;
+  top: 0;
   left: 0;
-  z-index: 1000; /* Add z-index to make sure it appears above other elements */
-  padding: 15px 0; /* Adjust padding for styling */
-}
-nav {
-  width: 16%;
-height: 100%;
-padding: 80px 0;
+  z-index: 1000;
+  padding: 15px 20px;
 }
 
-ul {
-  display: block;
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
   list-style: none;
 }
 
-li {
-  margin: 45px 15px;
+.nav-list li {
+  margin: 60px 15px;
 }
 
-a {
+.nav-list a {
   text-decoration: none;
   color: rgb(170, 170, 170);
-  font-size: 25px;
-  padding: 10px 15px;
-  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
   transition: 0.2s ease-in;
 }
 
-a:hover {
-  color: rgb(243, 243, 243);
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: white; /* Adjust the color of the hamburger bars */
+  height: 3px;
+  width: 25px;
+  margin: 5px 0;
+  transition: 0.4s;
 }
 #cont-v1{
-    max-width: 45%;
-    margin: 0 auto;
-    padding: 10px 80px;
-    border-left: 2px solid rgb(65, 65, 65);
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 10px 80px;
+  border-left: 2px solid rgb(65, 65, 65);
 }
 #hero {
-    height: 42vh;
-    display: flex;
-    justify-content: space-between;
+  height: 42vh;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 #hero-content {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
+
+.column {
+  width: 419px;
+}
+
+@media only screen and (max-width: 1300px) {
+  #hero {
+    width: 62vw;
+    display: block;
+    justify-content: none;
+  
+  }
+  #cont-v1{
+    padding: 0 30px;
+}
+  h1{
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #head{
+    display: none;
+  }
+  #cont-v1{
+    width: 100vw;
+    padding: 0 30px;
+    float: left;
+    border-left: none;
+}
+.project-card {
+  width: 87vw;/* Set the width to 100% for each card within the column */
+  height: fit-content;
+}
+#stack{
+  width: 87vw;
+}
+
+#hero h2{
+font-size: 27px;
+}
+#about{
+  width: 87vw;
+}
+#hero {
+  height: 42vh;
+  width: 88vw;
+  display: block;
+  justify-content: none;
+
+}
+
+#hero-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+#img-content{
+  float: right;
+  margin-top: -10px; /* Add margin for spacing between text and image */
+
+}
+p{
+  text-align: justify;
+}
+}
+
 
 #text-content {
     text-align: left;
@@ -124,7 +202,7 @@ p{
     display: flex;
 }
 #col2{
-    width: 55%;
+    width: 100%;
     display: block;
     text-align: justify;
 }
@@ -135,15 +213,42 @@ p{
   position: relative; /* Add position relative for absolute positioning */
 }
 #col3::before {
-  content: '__________';
+  content: '_______';
   position: absolute;
-  top: 60px; /* Adjust the distance down */
+  top: 50px; /* Adjust the distance down */
+  left: -100px; /* Adjust the distance to the left */
+  height: fit-content;
+  border-top: 2px solid rgb(94, 94, 94);
+}
+#stack, #projects, #resume{
+  position: relative;
+}
+#stack::before {
+  content: '_______';
+  position: absolute;
+  top: 20px; /* Adjust the distance down */
+  left: -100px; /* Adjust the distance to the left */
+  height: fit-content;
+  border-top: 2px solid rgb(94, 94, 94);
+}
+#projects::before {
+  content: '_______';
+  position: absolute;
+  top: 20px; /* Adjust the distance down */
+  left: -100px; /* Adjust the distance to the left */
+  height: fit-content;
+  border-top: 2px solid rgb(94, 94, 94);
+}
+#resume::before {
+  content: '_______';
+  position: absolute;
+  top: 20px; /* Adjust the distance down */
   left: -100px; /* Adjust the distance to the left */
   height: fit-content;
   border-top: 2px solid rgb(94, 94, 94);
 }
 #col2 h3{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 #profile-photo{
     float: right;
@@ -180,16 +285,11 @@ table {
     justify-content: space-between;
   }
   
-  .column {
-    width: 419px;
-  }
-  
   .project-card {
     border: 0.4px solid #424242;
     border-radius: 8px;
-    padding: 10px 30px 30px 30px;
-    margin: 20px 20px 20px 0;
-    width: 100%; /* Set the width to 100% for each card within the column */
+    padding: 10px 22px 23px 22px;
+    margin: 20px 20px 20px 0; /* Set the width to 100% for each card within the column */
     height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -217,6 +317,7 @@ table {
     padding: 10px 15px;
     background-color: #949494;
     color: black;
+    font-size: 18px;
     text-transform: capitalize;
     font-weight: 300;
     text-decoration: none;
@@ -224,11 +325,11 @@ table {
   }
   #resume a{
     display: inline-block;
-    padding: 20px 25px;
+    padding: 12px 20px;
     background-color: #b1840a;
     color: black;
     margin: auto;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.1px ease-out;
@@ -245,34 +346,28 @@ table {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  #guide-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .guide {
     width: 100%; /* Adjust the width as needed */
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
+    border: 0.4px solid #5c5c5c;
+    border-radius: 5px;
+    padding: 0 30px 10px 30px;
     display: flex;
-    flex-direction: column;
+  }
+  .guide p{
+    font-size: 15;
+    line-height: 30px;
+    text-align: justify;
   }
 
   .info-section {
-    width: 30%;
+    width: 69%;
+    padding: 0 30px 0 0;
     margin-bottom: 10px;
   }
 
-  .image-section {
-    width: 58%;
-  }
 
   .image-section img {
-    width: 40%;
-    height: auto;
-    max-height: 300px; /* Adjust the max-height as needed */
+    width: 200px;
+    height: 300px; /* Adjust the max-height as needed */
   }

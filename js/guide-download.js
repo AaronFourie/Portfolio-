@@ -14,9 +14,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         const downloadLink = document.createElement('a');
         downloadLink.href = pdfUrl;
         downloadLink.download = fileName;
-        downloadLink.textContent = `Download ${fileName}`;
-
-        guideContainer.appendChild(iframeElement);
         guideContainer.appendChild(downloadLink);
     }
 

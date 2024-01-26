@@ -11,17 +11,21 @@
   <body>
     <div id="cont-v1">
       <header id="head">
-        <nav>
-          <ul>
-            <li><a ref="#">ABOUT</a></li>
-            <li><a ref="#">STACK</a></li>
-            <li><a ref="#">PROJECTS</a></li>
-            <li><a ref="#">CERTIFICATES</a></li>
-            <li><a ref="#">GUIDES</a></li>
-            <li><a ref="#">RESUME</a></li>
-            
-          </ul>
-        </nav>
+        <div class="nav-container">
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#stack">STACK ROADMAP</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#resume">RESUME</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <br />
       <br />
@@ -99,8 +103,8 @@
       </section>
       <br />
       <section id="about">
-        <div id="col3">
-          <h2 style="text-align: left">WHY I DECIDED TO PURSUE SOFTWARE DEVELOPMENT</h2>
+        <div id="col2">
+          <h3 style="text-align: left">WHY I DECIDED TO PURSUE SOFTWARE DEVELOPMENT</h3>
           <p>
             Three years ago I built my first Hello World application on
             Neatbeans in Java and I remember how excited I was getting the
@@ -116,12 +120,21 @@
       <br />
       <br />
       <br />
-      <section id="tech-stack">
-        <h2>STACK</h2>
+      <section id="stack">
+        <h2>STACK ROADMAP</h2>
         <br />
         <div class="stack-wrapper">
           <table>
             <tr>
+              <td>
+                <h4>2021</h4>
+              </td>
+              <td>
+                <span class="label">Java</span><br /><img
+                  src="images/logos/java.png"
+                  alt="Java"
+                />
+              </td>
               <td>
                 <span class="label">HTML5</span><br /><img
                   src="images/logos/html5.png"
@@ -134,34 +147,11 @@
                   alt="CSS"
                 />
               </td>
-              <td>
-                <span class="label">JavaScript</span><br /><img
-                  src="images/logos/javascript.png"
-                  alt="JavaScript"
-                />
-              </td>
-              <td>
-                <span class="label">Firebase</span><br /><img
-                  src="images/logos/firebase.png"
-                  alt="Firebase"
-                />
-              </td>
-              <td>
-                <span class="label">Oracle</span><br /><img
-                  src="images/logos/oracle.png"
-                  alt="Oracle"
-                />
-              </td>
-              <td>
-                <span class="label">SQL</span><br /><img
-                  src="images/logos/sql.png"
-                  alt="SQL"
-                  width="64px"
-                  height="64px"
-                />
-              </td>
             </tr>
             <tr>
+              <td>
+                <h3>2022</h3>
+              </td>
               <td>
                 <span class="label">MySQL</span><br /><img
                   src="images/logos/mysql.png"
@@ -175,18 +165,24 @@
                 />
               </td>
               <td>
-                <span class="label">Azure DevOps</span><br /><img
-                  src="images/logos/azure_devops.png"
-                  alt="Azure DevOps"
-                  width="105px"
-                  height="64px"
+                <span class="label">C#</span><br /><img
+                  src="images/c-sharp.png"
+                  alt="C Sharp"
+                  width="64px"
+                  height="68px"
                 />
               </td>
               <td>
-                <span class="label">Java</span><br /><img
+                <span class="label">Javascipt</span><br /><img
                   src="images/logos/java.png"
                   alt="Java"
                 />
+              </td>
+              
+            </tr>
+            <tr>
+              <td>
+                <h2>2023</h2>
               </td>
               <td>
                 <span class="label">Kotlin</span><br /><img
@@ -195,13 +191,27 @@
                   width="64px"
                   height="64px"
                 />
-              </td>
+              </td>   
               <td>
-                <span class="label">PHP</span><br /><img
-                  src="images/logos/php.png"
-                  alt="PHP"
+                <span class="label">Oracle</span><br /><img
+                  src="images/logos/oracle.png"
+                  alt="Oracle"
                 />
-              </td>
+              </td>               
+              <td>
+                <span class="label">Firebase</span><br /><img
+                  src="images/logos/firebase.png"
+                  alt="Firebase"
+                />
+              </td>   
+              <td>
+                <span class="label">Azure DevOps</span><br /><img
+                  src="images/logos/azure_devops.png"
+                  alt="Azure DevOps"
+                  width="105px"
+                  height="64px"
+                />
+              </td>    
             </tr>
           </table>
         </div>
@@ -216,12 +226,11 @@
       </section>
       <br />
       <br />
-      <br />
       <section id="resume">
         <h2>RESUME</h2>
-        <a
-          >Resume
-          <img src="images/download.png" alt="download" width="25" height="25"
+        <a href="pdfs/Resume.pdf" download="Aaron_Fourie_Resume.pdf"
+          >View and download resume 
+          <img src="images/download.png" alt="download" width="20" height="20"
         /></a>
       </section>
 
@@ -229,42 +238,50 @@
       <br />
       <br />
       <br />
-      <section id="guides">
-        <h2>MY GUIDES</h2>
-        <p>
-          I've created these C# guides to help assist second-year Software
-          Development students when working as a Programming Assistant Lecturer
-          at Rosebank College which are available for free on Github and DropBox.
-        </p>
-      
-        <div id="guide-container">
-          <!-- Guide 1 -->
-          <div class="guide">
-            <div class="info-section">
-              <h3>Guide 1: ASP.NET Core MVC</h3>
-              <p>Description of the guide...</p>
-            </div>
-            <div class="image-section">
-              <img src="images/mvc-guide.png" alt="MVC Guide">
-              <a href="https://www.dropbox.com/s/ok53hhj3ksnub2bu3ivkl/WPF_App_with_SQL_Database.pdf?raw=1" download="WPF_App_with_SQL_Database.pdf">Download</a>
-            </div>
-          </div>
-  
-          <!-- Guide 2 -->
-          <div class="guide">
-            <div class="info-section">
-              <h3>Guide 2: ASP.NET Core Web App (MVC)</h3>
-              <p>Description of the guide...</p>
-            </div>
-            <div class="image-section">
-              <img src="images/wpf-guide.png" alt="WPF Guide">
-              <a href="https://www.dropbox.com/s/ciaptr55x3agdhrm0ppsj/ASPDotNet_Core_Web_App_-MVC-_using_Individual_Accounts.pdf?raw=1" download="ASPDotNet_Core_Web_App_-MVC-_using_Individual_Accounts.pdf">Download</a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const head = document.getElementById("head");
+        const navList = document.querySelector(".nav-list");
+        const menuToggle = document.querySelector(".menu-toggle");
+  
+        menuToggle.addEventListener("click", function () {
+          head.classList.toggle("show");
+          navList.classList.toggle("show");
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const head = document.getElementById("head");
+        const navList = document.querySelector(".nav-list");
+        const menuToggle = document.querySelector(".menu-toggle");
+  
+        menuToggle.addEventListener("click", function () {
+          head.classList.toggle("show");
+          navList.classList.toggle("show");
+        });
+  
+        // Add smooth scrolling to navigation links
+        const navLinks = document.querySelectorAll('.nav-list a');
+  
+        navLinks.forEach(link => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+  
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+  
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - head.offsetHeight, // Adjusted for fixed header
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
     <script src="js/script.js"></script>
     <script src="js/custom-cursor.js"></script>
     <script src="js/guide-download.js"></script>
