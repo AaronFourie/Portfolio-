@@ -119,6 +119,7 @@ p{
   h1{
     font-size: 80px;
   }
+  
 }
 @media only screen and (max-width: 1100px) {
   #head{
@@ -141,7 +142,7 @@ p{
 #hero h2{
 font-size: 27px;
 }
-#about{
+#about, #about1{
   width: 87vw;
 }
 #hero {
@@ -319,12 +320,13 @@ p{
   width: 100%;
   display: block;
   text-align: justify;
-  position: relative; /* Add position relative for absolute positioning */
+  position: relative; 
 }
-#col3::before {
+#col3::before, #stack::before, #projects::before, #resume::before {
   content: '_______';
+  color: transparent;
   position: absolute;
-  top: 50px; /* Adjust the distance down */
+  top: 20px; /* Adjust the distance down */
   left: -100px; /* Adjust the distance to the left */
   height: fit-content;
   border-top: 2px solid rgb(94, 94, 94);
@@ -332,30 +334,7 @@ p{
 #stack, #projects, #resume{
   position: relative;
 }
-#stack::before {
-  content: '_______';
-  position: absolute;
-  top: 20px; /* Adjust the distance down */
-  left: -100px; /* Adjust the distance to the left */
-  height: fit-content;
-  border-top: 2px solid rgb(94, 94, 94);
-}
-#projects::before {
-  content: '_______';
-  position: absolute;
-  top: 20px; /* Adjust the distance down */
-  left: -100px; /* Adjust the distance to the left */
-  height: fit-content;
-  border-top: 2px solid rgb(94, 94, 94);
-}
-#resume::before {
-  content: '_______';
-  position: absolute;
-  top: 20px; /* Adjust the distance down */
-  left: -100px; /* Adjust the distance to the left */
-  height: fit-content;
-  border-top: 2px solid rgb(94, 94, 94);
-}
+
 #col2 h3{
     padding-bottom: 10px;
 }
@@ -398,7 +377,7 @@ table {
     border: 0.4px solid #424242;
     border-radius: 8px;
     padding: 10px 22px 23px 22px;
-    margin: 20px 20px 20px 0; /* Set the width to 100% for each card within the column */
+    margin: 20px 20px 20px 0;
     height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -456,7 +435,7 @@ table {
     flex-wrap: wrap;
   }
   .guide {
-    width: 100%; /* Adjust the width as needed */
+    width: 100%; 
     margin-bottom: 20px;
     border: 0.4px solid #5c5c5c;
     border-radius: 5px;
@@ -475,8 +454,7 @@ table {
     margin-bottom: 10px;
   }
 
-
   .image-section img {
     width: 200px;
-    height: 300px; /* Adjust the max-height as needed */
+    height: 300px; 
   }
