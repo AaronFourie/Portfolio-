@@ -263,8 +263,19 @@ p{
 }
 }
 @media only screen and (max-width: 400px) {
-  #hero {
-    margin-bottom: 80px;
+  #about1 {
+    margin: 100px 0 0 0;
+  }
+  #img-content #profile-photo{
+    width: 195px;
+    height: 218px;
+  }
+  #hero h2{
+    font-size: 23px;
+  }
+  #stack{
+    margin: -55px 0;
+    padding: 0;
   }
 }
 #text-content {
