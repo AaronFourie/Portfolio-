@@ -537,7 +537,7 @@ table {
   .project-card:hover {
     transform: scale(1.05);
     border: 0.4px solid #9c9c9c;
-    box-shadow: 20px 12px 30px 4px rgba(223, 223, 223, 0.17)
+    box-shadow: 4px 5px 8px 0px rgba(223, 223, 223, 0.17)
   }
   
   .project-card h3 {
