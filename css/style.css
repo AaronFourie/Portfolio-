@@ -381,7 +381,7 @@ p{
 }
 #img-content #profile-photo{
   padding: 20px;
-  width: 200px;
+  width: 211px;
   height: 241px;
   transform: translateX(20px);
   margin-top: 30px;
@@ -445,7 +445,7 @@ p{
     margin: 100px 0 0 0;
   }
   #img-content #profile-photo{
-    width: 195px;
+    width: 200px;
     height: 218px;
   }
   #hero h2{
