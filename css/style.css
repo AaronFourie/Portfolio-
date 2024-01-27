@@ -14,7 +14,7 @@ body {
 }
 h1{
     color: white;
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 900;
 }
 h2{
@@ -91,16 +91,25 @@ p{
 #hero {
   height: 42vh;
   display: flex;
+  width:max-content;
   justify-content: space-between;
-
+  margin-bottom: 100px;
 }
 
 #hero-content {
-  width: 100%;
   margin: 0 auto;
   display: flex;
+  height: max-content;
   align-items: center;
+  height: 320px;
+  background: #063d44;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 100px 30px 30px 30px;
 }
+
 #contact , #services {
 padding-bottom: 40px;
 margin: 0;
@@ -119,7 +128,7 @@ width: 60vw;
   color: rgb(175, 175, 175);
 }
 #contact ul li a:hover{
-  color: #b1840a;
+  color: #127683;
 }
 .column {
   width: 419px;
@@ -234,7 +243,7 @@ font-size: 27px;
 }
 #hero {
   height: 42vh;
-  width: 88vw;
+  width: 82vw;
   display: block;
   justify-content: none;
 
@@ -259,6 +268,13 @@ p{
 .project-card {
   width: 87vw;
   height: fit-content;
+}
+#hero {
+  margin-top: -120px;
+  height: 42vh;
+  width: 75vw;
+  display: block;
+  justify-content: none;
 }
 }
 @media only screen and (max-width: 600px) {
@@ -294,14 +310,16 @@ font-size: 27px;
   width: 87vw;
 }
 #hero {
-  height: 42vh;
-  width: 90vw;
+  height: 35vh;
+  width: 75vw;
   display: grid;
   justify-content: none;
-
+margin-bottom: 170px;
 }
 #hero-content {
+  height: 20vh;
   width: 100%;
+  padding-top: 120px;
   margin: 0 auto;
   display: grid;
   padding-bottom: 40px;
@@ -339,17 +357,20 @@ p{
   margin-bottom: 30px;
 }
 #img-content #profile-photo{
-  padding: 40px 30px;
+  padding: 20px;
   width: 240px;
   height: 261px;
+  transform: translateX(20px);
+  margin-top: 30px;
+
 }
 #img-content ul{
   display: grid;
-  margin-top: -20px;
+  transform: translateX(-20px);
 }
 #img-content ul li{
   padding: 0;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 p{
   text-align: justify;
@@ -366,9 +387,14 @@ p{
     text-align: justify;
   }
 }
+@media only screen and (max-width: 640px) {
+  #hero h1{
+    font-size: 50px;
+  }
+}
 @media only screen and (max-width: 525px) {
   #hero h1{
-    font-size: 44px;
+    font-size: 48px;
   }
   #hero h2{
     text-decoration: underline;
@@ -406,7 +432,7 @@ p{
   margin-top:-10px;
 }
 h2 {
-    font-size: 37px;
+    font-size: 35px;
     font-weight: 400;
     color: rgb(170, 170, 170);
 }
@@ -457,7 +483,7 @@ p{
 #profile-photo{
     float: right;
     border-radius: 35%;
-    box-shadow: 8px 12px 30px 7px rgba(0,0,0,0.5);
+    box-shadow: 8px 12px 30px 7px rgba(0,0,0,0.2);
 }
 table {
     width: 100%;
@@ -531,7 +557,7 @@ table {
   #resume a{
     display: inline-block;
     padding: 12px 20px;
-    background-color: #b1840a;
+    background-color: #0f8494;
     color: black;
     margin: auto;
     font-size: 20px;
@@ -544,7 +570,7 @@ table {
     transform: scale(1.05);
   }
   .project-card a:hover {
-    background-color: #b1840a;
+    background-color: #106c79;
   }
   #guide-container {
     display: flex;
