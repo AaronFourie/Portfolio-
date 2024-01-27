@@ -401,6 +401,9 @@ p{
   #hero h1{
     font-size: 50px;
   }
+  #hero h2{
+    padding-top: 30px;
+  }
   p{
     line-height: 28px;
     font-size: 16px;
@@ -414,7 +417,6 @@ p{
     font-size: 48px;
   }
   #hero h2{
-    text-decoration: underline;
     font-weight: 300;
 
   }
@@ -630,7 +632,7 @@ table {
     width: 200px;
     height: 300px; 
   }
-  #hero h1{
+  #hero h1,h2{
     text-transform: uppercase;
   }
   #about1 h2, #stack h2, #projects h2, #services h2{
