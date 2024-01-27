@@ -513,6 +513,7 @@ p{
 }
 #profile-photo{
     float: right;
+    transform: translateY(-10px);
     border-top-right-radius: 90px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
