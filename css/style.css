@@ -457,6 +457,7 @@ p{
 #profile-photo{
     float: right;
     border-radius: 35%;
+    box-shadow: 8px 12px 30px 7px rgba(0,0,0,0.5);
 }
 table {
     width: 100%;
