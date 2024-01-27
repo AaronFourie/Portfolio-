@@ -76,7 +76,7 @@ p{
 }
 
 .bar {
-  background-color: white; /* Adjust the color of the hamburger bars */
+  background-color: white; 
   height: 3px;
   width: 25px;
   margin: 5px 0;
@@ -178,7 +178,7 @@ p{
   }
 
 .project-card {
-  width: 62vw;/* Set the width to 100% for each card within the column */
+  width: 62vw;
   height: fit-content;
 }
 }
@@ -219,7 +219,7 @@ p{
     border-left: none;
 }
 .project-card {
-  width: 66vw;/* Set the width to 100% for each card within the column */
+  width: 66vw;
   height: fit-content;
 }
 #stack{
@@ -248,7 +248,7 @@ font-size: 27px;
 
 #img-content{
   float: right;
-  margin-top: -10px; /* Add margin for spacing between text and image */
+  margin-top: -10px;
 
 }
 p{
@@ -257,7 +257,7 @@ p{
 }
 @media only screen and (max-width: 850px) {
 .project-card {
-  width: 87vw;/* Set the width to 100% for each card within the column */
+  width: 87vw;
   height: fit-content;
 }
 }
@@ -272,7 +272,7 @@ p{
     border-left: none;
 }
 .project-card {
-  width: 87vw;/* Set the width to 100% for each card within the column */
+  width: 87vw;
   height: fit-content;
 }
 #stack{
@@ -335,7 +335,7 @@ p{
   padding: 0;
 }
 #img-content{
-  margin-top: -10px; /* Add margin for spacing between text and image */
+  margin-top: -10px; 
   margin-bottom: 30px;
 }
 #img-content #profile-photo{
@@ -413,7 +413,7 @@ h2 {
 
 #img-content {
     margin-left: 0px;
-    margin-top: -10px; /* Add margin for spacing between text and image */
+    margin-top: -10px;
     align-items: center;
 }
 #img-content li{
@@ -442,8 +442,8 @@ p{
   content: '_______';
   color: transparent;
   position: absolute;
-  top: 20px; /* Adjust the distance down */
-  left: -100px; /* Adjust the distance to the left */
+  top: 20px; 
+  left: -100px; 
   height: fit-content;
   border-top: 2px solid rgb(94, 94, 94);
 }
