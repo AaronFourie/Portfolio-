@@ -104,11 +104,11 @@ p{
   align-items: center;
 
   background: linear-gradient(95deg, rgba(6, 61, 68, 0), rgba(6, 61, 68, 1));
-  border-top-right-radius: 130px;
+  border-top-right-radius: 120px;
   border-bottom-right-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  padding: 50px 30px 0px 30px;
+  padding: 60px 30px 0px 30px;
 }
 #col3::before, #stack::before, #projects::before, #resume::before {
   content: '_______';
@@ -382,7 +382,7 @@ p{
 #img-content #profile-photo{
   padding: 20px;
   width: 200px;
-  height: 271px;
+  height: 241px;
   transform: translateX(20px);
   margin-top: 30px;
 
