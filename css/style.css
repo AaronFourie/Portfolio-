@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-family: 'Inconsolata', monospace;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../images/bg1.jpg');
-  background-size: contain;
+  background-size: cover;
   background-blend-mode: overlay;
 }
 h1{
@@ -127,7 +127,7 @@ p{
     width:62vw;
   }
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 2400px) {
   #projects{
     width: max-content;
   }
