@@ -120,10 +120,12 @@ width: 60vw;
 #contact ul, #services ul{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 #contact ul li, #services ul li{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 #contact ul li a{
   color: rgb(175, 175, 175);
@@ -420,6 +422,9 @@ p{
   #stack{
     margin: -55px 0;
     padding: 0;
+  }
+  #hero {
+    margin-top: -100px;
   }
 }
 #text-content {
