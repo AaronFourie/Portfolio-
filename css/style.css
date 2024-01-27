@@ -106,7 +106,8 @@ p{
   width: 419px;
 }
 
-@media only screen and (max-width: 1300px) {
+
+@media only screen and (max-width: 1400px) {
   #hero {
     width: 62vw;
     display: block;
@@ -116,10 +117,51 @@ p{
   #cont-v1{
     padding: 0 30px;
 }
+p{
+  text-align: left;
+}
   h1{
     font-size: 80px;
   }
-  
+  #about, #about1{
+    width:62vw;
+  }
+}
+@media only screen and (max-width: 1900px) {
+  #projects{
+    width: max-content;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #projects{
+    width: fit-content;
+  }
+  #projects-card{
+    width: 70vw;
+  }
+  #about, #about1{
+    width: 60vw;
+  }
+
+.project-card {
+  width: 62vw;/* Set the width to 100% for each card within the column */
+  height: fit-content;
+}
+}
+@media only screen and (max-width: 1300px) {
+  #cont-v1{
+    width: 80vw;
+    padding: 0 30px;
+  }
+  #stack{
+    width: 64vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+p{
+  text-align: justify;
+}
+
 }
 @media only screen and (max-width: 1100px) {
   #head{
@@ -127,23 +169,23 @@ p{
   }
   #cont-v1{
     width: 100vw;
-    padding: 0 30px;
+    padding: 0 40px;
     float: left;
     border-left: none;
 }
 .project-card {
-  width: 87vw;/* Set the width to 100% for each card within the column */
+  width: 66vw;/* Set the width to 100% for each card within the column */
   height: fit-content;
 }
 #stack{
-  width: 87vw;
+  width: 68vw;
 }
 
 #hero h2{
 font-size: 27px;
 }
 #about, #about1{
-  width: 87vw;
+  width: 65vw;
 }
 #hero {
   height: 42vh;
@@ -165,10 +207,15 @@ font-size: 27px;
 
 }
 p{
-  text-align: justify;
+  text-align: left;
 }
 }
-
+@media only screen and (max-width: 850px) {
+.project-card {
+  width: 87vw;/* Set the width to 100% for each card within the column */
+  height: fit-content;
+}
+}
 @media only screen and (max-width: 600px) {
   #head{
     display: none;
@@ -262,6 +309,30 @@ p{
 p{
   text-align: justify;
 }
+}
+@media only screen and (max-width: 825px) {
+  #stack, #about, #about1{
+    width: 84vw;
+  }
+  #hero h1{
+    font-size: 66px;
+  }
+  p{
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 525px) {
+  #hero h1{
+    font-size: 44px;
+  }
+  #hero h2{
+    text-decoration: underline;
+    font-weight: 300;
+
+  }
+  #hero h3{
+    font-weight:200;
+  }
 }
 @media only screen and (max-width: 400px) {
   #about1 {
@@ -457,4 +528,7 @@ table {
   .image-section img {
     width: 200px;
     height: 300px; 
+  }
+  #hero h2{
+    text-decoration: underline;
   }
