@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;900&display=swap');
 html{
     margin: 0;
     padding: 0;
@@ -35,9 +35,9 @@ h4{
 }
 p{
     color: rgb(224, 224, 224);
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 36px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 33px;
     text-align: left;
 }
 #head {
@@ -83,7 +83,7 @@ p{
   transition: 0.4s;
 }
 #cont-v1{
-  max-width: 45%;
+  max-width: 42%;
   margin: 0 auto;
   padding: 10px 80px;
   border-left: 2px solid rgb(65, 65, 65);
@@ -94,6 +94,7 @@ p{
   width:max-content;
   justify-content: space-between;
   margin-bottom: 100px;
+  margin-top: -95px;
 }
 
 #hero-content {
@@ -101,14 +102,13 @@ p{
   display: flex;
   height: max-content;
   align-items: center;
-  height: 320px;
 
   background: linear-gradient(95deg, rgba(6, 61, 68, 0), rgba(6, 61, 68, 1));
-  border-top-right-radius: 100px;
+  border-top-right-radius: 130px;
   border-bottom-right-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  padding: 100px 30px 30px 30px;
+  padding: 50px 30px 0px 30px;
 }
 
 #contact , #services {
@@ -116,13 +116,16 @@ padding-bottom: 40px;
 margin: 0;
 width: 60vw;
 }
-
-#contact ul, #services ul{
+#work-preferences{
+  width: 580px;
+  padding-bottom: 50px;
+}
+#contact ul, #services ul, #work-preferences ul{
   margin: 0;
   padding: 0;
   list-style: none;
 }
-#contact ul li, #services ul li{
+#contact ul li, #services ul li, #work-preferences ul li{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -280,10 +283,12 @@ p{
   justify-content: none;
 }
 }
+
 @media only screen and (max-width: 600px) {
   #head{
     display: none;
   }
+
   #cont-v1{
     width: 100vw;
     padding: 0 20px;
@@ -317,7 +322,7 @@ font-size: 27px;
   width: 75vw;
   display: grid;
   justify-content: none;
-margin-bottom: 170px;
+margin-bottom: 200px;
 }
 #hero-content {
   height: 20vh;
@@ -325,7 +330,7 @@ margin-bottom: 170px;
   padding-top: 120px;
   margin: 0 auto;
   display: grid;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 #about1{
   margin: 75px 0;
@@ -361,8 +366,8 @@ p{
 }
 #img-content #profile-photo{
   padding: 20px;
-  width: 240px;
-  height: 261px;
+  width: 200px;
+  height: 271px;
   transform: translateX(20px);
   margin-top: 30px;
 
@@ -449,9 +454,9 @@ p{
   margin-top:-10px;
 }
 h2 {
-    font-size: 35px;
-    font-weight: 400;
-    color: rgb(170, 170, 170);
+    font-size: 38px;
+    font-weight:600;
+    color: rgb(236, 236, 236);
 }
 
 #img-content {
@@ -460,12 +465,15 @@ h2 {
     align-items: center;
 }
 #img-content li{
-  margin: 10px 10px 20px 10px;
+  margin: 10px 4px 20px 4px;
   padding-top: 20px;
   display: inline-block;
 }
 p{
-   font-weight: 200; 
+  color: rgb(221, 221, 221);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
 }
 #about{
     display: flex;
@@ -499,7 +507,10 @@ p{
 }
 #profile-photo{
     float: right;
-    border-radius: 35%;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     box-shadow: 8px 12px 30px 7px rgba(0,0,0,0.2);
 }
 table {
@@ -619,6 +630,53 @@ table {
     width: 200px;
     height: 300px; 
   }
-  #hero h2{
-    text-decoration: underline;
+  #hero h1{
+    text-transform: uppercase;
   }
+  #about1 h2, #stack h2, #projects h2, #services h2{
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+  }
+  .expandable-item h3 {
+    font-size: 28px;
+    color: white;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  .expandable-item h3:before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 580px;
+    background: rgb(122, 122, 122); /* Use background for the line */
+    height: 1px;
+  }
+  
+  .expandable-item p {
+    display: none;
+  }
+  
+  .expandable-item p.show {
+    display: block;
+  }
+  
+  .expandable-item .arrow {
+    transition: transform 0.3s ease;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .expandable-item.expanded .arrow {
+    transform: rotate(180deg);
+  }
+  @media only screen and (max-width: 660px) {
+    #work-preferences{
+      width: 87vw;
+    }
+    .expandable-item h3:before{
+      width: 87vw;
+    }
+    }
