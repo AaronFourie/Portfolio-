@@ -15,6 +15,7 @@ body {
 h1{
     color: white;
     font-size: 90px;
+    line-height: 5rem;
     font-weight: 900;
 }
 h2{
@@ -34,7 +35,7 @@ h4{
     font-size: 16px;
 }
 p{
-    color: rgb(224, 224, 224);
+    color: rgba(194, 194, 194, 0.877);
     font-weight: bold;
     font-size: 18px;
     line-height: 33px;
@@ -185,11 +186,20 @@ p{
   #stack, #about, #about1, #hero{
     width: 850px;
   }
+    h1{
+    font-size: 80px;
+  }
 }
 @media only screen and (max-width: 1400px) {
 
   #stack, #about, #about1, #hero{
     width: 750px;
+  }
+  h1{
+    line-height: 4.3rem;
+  }
+  #profile-photo{
+    margin-left: 20px;
   }
   #col3::before, #stack::before, #projects::before, #resume::before {
     left: -70px; 
@@ -226,6 +236,9 @@ p{
   }
   #stack{
     width: 64vw;
+  }
+  h1{
+    line-height: 70px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -284,6 +297,9 @@ font-size: 27px;
 p{
   text-align: left;
 }
+h1{
+  line-height: 70px;
+}
 }
 @media only screen and (max-width: 850px) {
 .project-card {
@@ -297,13 +313,17 @@ p{
   display: block;
   justify-content: none;
 }
+h1{
+  line-height: 50px;
+}
+
 }
 
 @media only screen and (max-width: 600px) {
   #head{
     display: none;
   }
-
+ 
   #cont-v1{
     width: 100vw;
     padding: 0 20px;
@@ -337,15 +357,17 @@ font-size: 27px;
   width: 75vw;
   display: grid;
   justify-content: none;
-margin-bottom: 200px;
+margin-bottom: 190px;
+
 }
 #hero-content {
   height: 20vh;
   width: 100%;
-  padding-top: 120px;
-  margin: 0 auto;
+  padding-top: 140px;
+  margin: -30px auto 0 auto;
   display: grid;
   padding-bottom: 70px;
+  border-top-right-radius:40px;
 }
 #about1{
   margin: 75px 0;
@@ -381,15 +403,15 @@ p{
 }
 #img-content #profile-photo{
   padding: 20px;
-  width: 211px;
-  height: 241px;
-  transform: translateX(20px);
-  margin-top: 30px;
+  width: 180px;
+  height: 208px;
+  margin-top: 20px;
 
 }
 #img-content ul{
   display: grid;
   transform: translateX(-20px);
+  margin-top: -30px;
 }
 #img-content ul li{
   padding: 0;
@@ -407,9 +429,8 @@ p{
     font-size: 66px;
   }
   p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 38px;
-    text-align: justify;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -421,7 +442,7 @@ p{
   }
   p{
     line-height: 28px;
-    font-size: 16px;
+    font-size: 14px;
   }
   #about, #about1, #stack{
     margin-bottom: -30px;
@@ -471,9 +492,9 @@ p{
   margin-top:-10px;
 }
 h2 {
-    font-size: 38px;
-    font-weight:600;
-    color: rgb(236, 236, 236);
+    font-size: 34px;
+    font-weight:500;
+    color: rgb(201, 201, 201);
 }
 
 #img-content {
@@ -487,9 +508,9 @@ h2 {
   display: inline-block;
 }
 p{
-  color: rgb(221, 221, 221);
+  color: rgba(221, 221, 221, 0.774);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 32px;
 }
 #about{
