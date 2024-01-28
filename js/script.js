@@ -71,7 +71,7 @@ for (let i = 0; i < repos.length; i++) {
         <h3>${repoDetails.name}</h3>
         <p>${repoDetails.description}</p>
         <p><strong>Languages:</strong> ${repoDetails.tags.join(", ")}</p>
-        <a href="${repoDetails.html_url}" target="_blank">View on GitHub</a>
+        <a href="${repoDetails.html_url}" target="_blank"><img src="./images/contact-links/github_grey.png" width="40px" height="40px" alt="github"></a>
       `;
   
       // Append the card to the appropriate column
