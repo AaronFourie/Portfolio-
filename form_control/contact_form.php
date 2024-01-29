@@ -1,48 +1,46 @@
 <?php
 
-// Allow requests from any origin
-header("Access-Control-Allow-Origin: *");
-
-// Allow the following methods from any origin
-header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
-
-// Allow the following headers from any origin
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-
-// Set content type to JSON
-header("Content-Type: application/json");
-
-// Check if the request method is either POST or GET
-if ($_SERVER["REQUEST_METHOD"] == "POST" || $_SERVER["REQUEST_METHOD"] == "GET") {
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+    $message = trim($_POST["message"]);
 
     // Validate email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format";
+    if (!$email) {
+        http_response_code(400);
+        echo json_encode(array("error" => "Invalid email format"));
         exit();
     }
 
     // Check if both input fields are filled
-    if (empty($email) || empty($message)) {
-        echo "Both email and message are required";
+    if (empty($message)) {
+        http_response_code(400);
+        echo json_encode(array("error" => "Message is required"));
         exit();
     }
 
+    // Set the recipient email address
     $to = "aaronfourie16@gmail.com";
+
+    // Set email subject
     $subject = "Portfolio Contact Form Submission";
-    $headers = "From: $email";
 
-    mail($to, $subject, $message, $headers);
+    // Set additional headers
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
-    echo "Email sent successfully!";
+    // Send email
+    $success = mail($to, $subject, $message, $headers);
 
+    if ($success) {
+        http_response_code(200);
+        echo json_encode(array("message" => "Email sent successfully!"));
+    } else {
+        http_response_code(500);
+        echo json_encode(array("error" => "Failed to send email"));
+    }
 } else {
-    // If the form is not submitted via POST or GET method, handle accordingly
-    echo json_encode(array("error" => "Form submission method not allowed"));
+    http_response_code(405);
+    echo json_encode(array("error" => "Method Not Allowed"));
 }
-
 ?>
-
-
-<?php
