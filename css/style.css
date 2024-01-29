@@ -126,7 +126,7 @@ p{
 #contact , #services {
 padding-bottom: 40px;
 margin: 0;
-width: 60vw;
+width: 40vw;
 }
 #work-preferences{
   width: 580px;
@@ -378,16 +378,21 @@ h1{
  
   #cont-v1{
     width: 100vw;
-    padding: 0 20px;
+    padding: 0;
+    margin: 0;
     float: left;
     border-left: none;
 }
 .project-card {
-  width: 87vw;
+  width: 95%;
   height: fit-content;
 }
-#stack{
-  width: 90vw;
+#stack, #about1, #projects, #services, #work-preferences, #resume{
+  width: 85vw;
+  padding: 0 20px;
+}
+#contact{
+  padding: 0 20px;
 }
 h1{
   font-size: 54px;
@@ -406,7 +411,6 @@ font-size: 27px;
 }
 #hero {
   height: 35vh;
-  width: 75vw;
   display: grid;
   justify-content: none;
 margin-bottom: 190px;
@@ -423,19 +427,10 @@ margin-bottom: 190px;
 }
 #about1{
   margin: 75px 0;
-  width: 87vw;
-  padding: 0;
 }
 p{
   font-size: 16px;
 
-}
-#resume{
-  width: 87vw;
-}
-#stack{
-  padding: 0;
-  margin: 0;
 }
 #stack img{
   width: 38px;
@@ -446,8 +441,9 @@ p{
   font-size: 14px;
 }
 #about{
+  width: 97vw;
+  padding: 0 20px; 
   margin-top: -20px 0;
-  padding: 0;
 }
 #img-content{
   margin-top: -10px; 
@@ -513,25 +509,50 @@ p{
   }
 
 }
+@media only screen and (max-width: 320px) {
+  #about, #about1, #services, #stack, #contact, #work-preferences{
+    width: 270px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #projects-card{
+    width: 87vw;
+  }
+  #about1{
+    padding-top: -60px;
+  }
+  #hero-content{
+    width: 100vw;
+  }
+  #hero{
+    margin-bottom: 0;
+  }
+}
 @media only screen and (max-width: 400px) {
   #about1 {
     margin: 100px 0 0 0;
   }
   #img-content #profile-photo{
-    width: 200px;
-    height: 218px;
+    width: 140px;
+    height: 168px;
   }
   #hero h2{
     font-size: 23px;
   }
+  #work-preferences h3{
+    font-size: 20px;
+    text-align: left;
+  }
   #stack{
-    margin: -55px 0;
-    padding: 0;
+    margin: 0 0 -55px 0;
+    padding: 0 20px;
   }
   #hero {
     padding-top: -35px;
     padding-bottom: 70px;
   }
+  
 }
 #text-content {
     text-align: left;
