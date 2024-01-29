@@ -17,7 +17,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     }
 
     // Send data to serverless function using fetch API
-    fetch('/api/contact_form.php', {
+    fetch('./form_control/contact_form.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
