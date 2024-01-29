@@ -152,7 +152,60 @@ width: 60vw;
   width: 419px;
 }
 
+#contact-form-container {
+  width: 535px;
+  padding:0px 20px 5px 20px;
+  border-radius: 10px;
+  border: 0.4px solid rgba(223, 223, 223, 0.17);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
+#contact-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form-container input,
+#contact-form-container textarea {
+  margin-bottom: 15px;
+  color: white;
+}
+#contact-form-container p{
+  margin-bottom: 15px;
+}
+#contact-form-container label{
+  margin-bottom: 15px;
+  color: rgb(216, 216, 216);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#contact-form-container input,
+#contact-form-container textarea {
+  padding: 12px;
+  border: 1px solid #464646;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(235, 235, 235);
+}
+
+#contact-form-container input[type="submit"] {
+  background-color: #0f8494;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 12px 28px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  width: fit-content;
+  float: right;
+  font-size: 19px;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form-container input[type="submit"]:hover {
+  background-color: white;
+}
 @media only screen and (max-width: 1400px) {
   #hero {
     width: 62vw;
@@ -223,9 +276,8 @@ p{
 }
 }
 @media only screen and (max-width: 750px) {
-  #contact .map{
-    width: 87vw;
-    height: 300px;
+  #contact-form-container {
+    width:92%;
   }
 }
 
@@ -609,11 +661,11 @@ table {
     font-size: 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: 0.1px ease-out;
+    transition: 0.3s ease-out;
     
   }
   #resume a:hover{
-    transform: scale(1.05);
+    background-color: white;
   }
   #guide-container {
     display: flex;
