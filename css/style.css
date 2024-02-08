@@ -546,7 +546,16 @@ p{
     padding-top: -35px;
     padding-bottom: 70px;
   }
-  
+  p{
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+  }
+  #projects p{
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+  }
 }
 #text-content {
     text-align: left;
